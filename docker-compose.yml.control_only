@@ -1,0 +1,8 @@
+control:
+  build: ./env
+  hostname: control
+  dockerfile: dockerfile_control
+  ports:
+    - "2200:22"
+  volumes:
+    - ./:/work
